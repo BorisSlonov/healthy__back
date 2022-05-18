@@ -11,9 +11,15 @@ const tabs = () => {
                 this.nextElementSibling.classList.toggle('active-content');
 
                 if (this.classList.contains('active-style')) {
+                    this.nextElementSibling.classList.add('animate__animated');
+                    this.nextElementSibling.classList.remove('animate__fadeOut');
+                    this.nextElementSibling.classList.add('animate__fadeIn');
                     this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 80 + "px";
+
                 } else {
                     this.nextElementSibling.style.maxHeight = '0px';
+                    this.nextElementSibling.classList.remove('animate__fadeIn');
+                    this.nextElementSibling.classList.add('animate__fadeOut');
                 }
             });
         });
