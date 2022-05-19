@@ -66,6 +66,8 @@
         font-size: 14px
     .problems__back
         line-height: 33.5px
+    .problems__header, .question__header
+        font-size: 20px
 
 @media (max-width: 937px)
     .navigation__text-item
@@ -96,7 +98,7 @@
     .problems__cards__vitamins
         line-height: 30.5px
 
-@media (max-width: 810px)
+@media (max-width: 813px)
     .question__tab__text:after
         border-top: 10px solid #ebebeb
         border-right: 20px solid transparent
@@ -113,16 +115,14 @@
         max-width: 210px
     .slider__button a
         font-size: 16px
-    .problems__header
-        font-size: 27px
+
     .question__header__text
         width: 93%
         font-size: 18px
     .question__header__text::before
         width: 37px
         height: 37px
-    .question__header
-        font-size: 27px
+
     .navigation__text-item
         padding-right: 24px
     .footer__text
@@ -131,6 +131,8 @@
         font-size: 12px
     .footer__text_bottom
         font-size: 20px
+    .slider__text-wrapper
+        max-width: 400px
 
 @media (max-width: 782px)
     .navigation__text-item
@@ -203,12 +205,12 @@
         right: 20px
         top: 54%
         transform: translateY(-50%)
-        width: 20px
+        width: 30px
         height: 12px
         span
             display: block
             height: 2px
-            width: 26px
+            width: 100%
             background-color: black
             margin-bottom: 2px
             transition: 0.5s all
@@ -230,8 +232,8 @@
         padding-top: 10px
 
     .navigation__wrapper_active
-        top: 14%
-        right: 1%
+        top: 60px
+        right: 15px
         max-width: 100%
         position: absolute
         z-index: 3
@@ -262,8 +264,7 @@
         width: 277px
     .slider__text
         font-size: 20px
-    .slider__line
-        height: 65px
+
     .swiper-pagination-bullet
         width: 8px
         height: 8px
@@ -271,6 +272,10 @@
         max-width: 168px
     .slider__button a
         font-size: 12px
+    .question
+        padding-bottom: 30px
+        padding-top: 30px
+
     .question__header__text
         width: 93%
         font-size: 16px
@@ -306,15 +311,16 @@
         &__wrapper_top
             display: flex
         &__line-small
-            height: 47px
+            height: 56px
+        &__text
+            &:last-child
+                vertical-align: top
     .swiper_small
         margin-top: 20px
 
 @media (max-width: 677px)
     .navigation__wrapper_active
         top: 60px
-    // .navigation__text-item
-    //     margin-top: 0px
 
     .header__site
         display: block
@@ -343,8 +349,7 @@
 
     .problems__cards-text
         font-size: 9px
-    .problems__header, .question__header span
-        font-size: 23px
+
     .question__header__text
         font-size: 13px
         width: 90%
@@ -355,8 +360,6 @@
         font-size: 7px
     .slider__text
         font-size: 17px
-    .slider__line
-        height: 40px
     .question__tab__text
         margin-left: 50px
     .footer__text_bottom
@@ -369,9 +372,20 @@
     .question__tab__text
         font-size: 11px
     .problems__header, .question__header span
-        font-size: 21px
+        font-size: 18px
     .footer__text_left
         max-width: 133px
+    .header__help
+        display: none
+    .header__wrapper
+        max-width: 500px
+    .header__left-wrapper
+        width: 100%
+        justify-content: start
+    .header__site
+        margin-left: 20px
+    .slider__text-wrapper
+        max-width: 300px
 
 @media (max-width: 535px)
     .navigation__text-item
@@ -398,25 +412,17 @@
         width: 100%
     .problems__text-wrapper
         height: 2.5rem
-    .problems__header, .question__header span
-        font-size: 20px
-    .header__site
-        font-size: 18px
-    .header__left-wrapper
-        width: 400px
+
     .problems__text-wrapper
         width: 100%
 
 @media (max-width:500px)
     .navigation__wrapper_active
         top: 53px
-    .slider__text
-        font-size: 12px
-    .slider__line
-        height: 28px
+
     .problems__header span, .question__header span
         border-bottom: 3px solid #f0dd50
-    .problems__header, .question__header span
+    .problems__header, .question__header
         font-size: 18px
     .slider__high-content-wrapper
         margin-top: 20px
@@ -430,17 +436,14 @@
 @media (max-width:466px)
     .header__left-wrapper
         width: 375px
-    .header__site
-        font-size: 17px
     .header__help
         font-size: 7px
+    
 
 @media (max-width:433px)
 
     .header__button
         flex-basis: 50%
-    .slider__text
-        font-size: 10px
     .slider__button a
         font-size: 6px
     .slider__button
@@ -462,10 +465,8 @@
         width: 85%
 
 @media (max-width:414px)
-    .header__left-wrapper
-        width: 314px
     .header__site
-        font-size: 14px
+        font-size: 18px
 
 @media (max-width:402px)
 
@@ -475,33 +476,12 @@
         width: 85%
     .question__tab__text.active-content
         margin-left: 33px
-    .header__site
-        font-size: 14px
-    .header__help
-        font-size: 7px
     .header__logo img
         max-width: 26px
-    .header__site
-        font-size: 14px
-    .header__help
-        font-size: 6px
     .navigation__wrapper_active
         top: 50px
 
-@media (max-width:360px)
-    .header__site
-        font-size: 12px
-    .header__left-wrapper
-        width: 268px
-@media (max-width:351px)
-    .header__site
-        font-size: 12px
-    .header__left-wrapper
-        width: 265px
-
 @media (max-width:348px)
-    .slider__text
-        font-size: 9px
     .header__button
         flex-basis: 55%
     .problems__header, .question__header span
@@ -510,9 +490,8 @@
         flex-basis: 60%
     .problems__cards-text
         font-size: 5px
-    .header__help
-        font-size: 5px
     .header__site
-        font-size: 11px
+        font-size: 16px
+        margin-left: 5px
     .navigation__wrapper_active
-        top: 13%
+        top: 50px
